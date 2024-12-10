@@ -2089,7 +2089,7 @@ label.error {
  * Inner Pages
  *--------------------------------------------------------------------------------------------------------------------*/
 .section-page-header {
-  margin-bottom: 50px;
+  %margin-bottom: 50px;
   padding: 30px 0;
   background: #fff;
  % border-top: solid 2px #eaeaea;
