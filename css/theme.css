@@ -370,7 +370,7 @@ label:after{
 
 ol li{
 
- list-style-position: outside;
+ list-style-position: inside;
 list-style-type: decimal-leading-zero;
  % list-style-type: none;
 font-family: Helvetica,tex_gyre_herosregular,TimesNewRoman-Rm,   Helvetica,    Arial,   sans-serif;
@@ -379,7 +379,7 @@ font-size:16px;
  color:#000;
 %  Font-weight:400; 
 line-height: 26px;
-  margin:  10px  0px 20px  32px;
+  margin:  10px  0px 20px  0px;
    
   }
 
