@@ -390,7 +390,7 @@ line-height: 26px;
 	line-height: 27px;
 	% color: #003C9D;
 	%letter-spacing:1px; 
-color: #e84855;
+%color: #e84855;
 }
 
   ol li a:hover{
@@ -889,7 +889,7 @@ a {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   font-weight: 500;
-  color:#e84855;
+  color:#085485;
 }
 a:hover,
 a.hover,
