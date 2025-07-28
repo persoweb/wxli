@@ -129,7 +129,7 @@
 }
 
 @font-face {
-    font-family: 'Raleway';
+    font-family: 'RalewayMedium';
     src: url('Raleway-Medium.eot');
     src: url('Raleway-Medium.eot?#iefix') format('embedded-opentype'),
         url('Raleway-Medium.woff2') format('woff2'),
@@ -311,7 +311,7 @@ body {
   -webkit-font-smoothing: antialiased;
   color: #000;
   font-size: 18px;
-  font-family: 'Raleway',Raleway, Helvetica,    sans-serif;
+  font-family: 'RalewayMedium', 'Raleway',Raleway, Helvetica,    sans-serif;
  background:  #f5f1e5;
  %  background: url(yepaper.jpg);
   %  background-size: cover;
