@@ -103,7 +103,7 @@
 
 
 @font-face {
-    font-family: 'Raleway';
+    font-family: 'RalewaySemiBoldItalic';
     src: url('Raleway-SemiBoldItalic.eot');
     src: url('Raleway-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
         url('Raleway-SemiBoldItalic.woff2') format('woff2'),
@@ -116,7 +116,7 @@
 }
 
 @font-face {
-    font-family: 'Raleway';
+    font-family: 'RalewaySemiBold';
     src: url('Raleway-SemiBold.eot');
     src: url('Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
         url('Raleway-SemiBold.woff2') format('woff2'),
@@ -142,7 +142,7 @@
 }
 
 @font-face {
-    font-family: 'Raleway';
+    font-family: 'RalewayMediumItalic';
     src: url('Raleway-MediumItalic.eot');
     src: url('Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'),
         url('Raleway-MediumItalic.woff2') format('woff2'),
@@ -155,7 +155,7 @@
 }
 
 @font-face {
-    font-family: 'Raleway';
+    font-family: 'RalewayItalic';
     src: url('Raleway-Italic.eot');
     src: url('Raleway-Italic.eot?#iefix') format('embedded-opentype'),
         url('Raleway-Italic.woff2') format('woff2'),
@@ -168,7 +168,7 @@
 }
 
 @font-face {
-    font-family: 'Raleway';
+    font-family: 'RalewayRegular';
     src: url('Raleway-Regular.eot');
     src: url('Raleway-Regular.eot?#iefix') format('embedded-opentype'),
         url('Raleway-Regular.woff2') format('woff2'),
@@ -181,7 +181,7 @@
 }
 
 @font-face {
-    font-family: 'Raleway';
+    font-family: 'RalewayBoldItalic';
     src: url('Raleway-BoldItalic.eot');
     src: url('Raleway-BoldItalic.eot?#iefix') format('embedded-opentype'),
         url('Raleway-BoldItalic.woff2') format('woff2'),
@@ -194,7 +194,7 @@
 }
 
 @font-face {
-    font-family: 'Raleway';
+    font-family: 'RalewayBold';
     src: url('Raleway-Bold.eot');
     src: url('Raleway-Bold.eot?#iefix') format('embedded-opentype'),
         url('Raleway-Bold.woff2') format('woff2'),
@@ -230,7 +230,7 @@ ol li{
  list-style-position: inside;
 list-style-type: decimal-leading-zero;
  % list-style-type: none;
-%font-family: Helvetica,tex_gyre_herosregular,TimesNewRoman-Rm,   Helvetica,    Arial,   sans-serif;
+ font-family:RalewayMedium, Helvetica,tex_gyre_herosregular,TimesNewRoman-Rm,   Helvetica,    Arial,   sans-serif;
 font-size:16px;
  %text-align: justify;
  color:#000;
