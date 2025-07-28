@@ -230,7 +230,7 @@ ol li{
  list-style-position: inside;
 list-style-type: decimal-leading-zero;
  % list-style-type: none;
-font-family: Helvetica,tex_gyre_herosregular,TimesNewRoman-Rm,   Helvetica,    Arial,   sans-serif;
+%font-family: Helvetica,tex_gyre_herosregular,TimesNewRoman-Rm,   Helvetica,    Arial,   sans-serif;
 font-size:16px;
  %text-align: justify;
  color:#000;
@@ -259,7 +259,7 @@ line-height: 26px;
 }
 
 .mdi{
- font-family:   Helvetica,  tex_gyre_herosregular, Helvetica, Arial, sans-serif;
+% font-family:   Helvetica,  tex_gyre_herosregular, Helvetica, Arial, sans-serif;
 %font-weight:300;
  font-size:14px;
 text-align: justify;
@@ -277,7 +277,7 @@ margin-right:  0px;
 
 .journal
 {
-font-family: Helvetica, tex_gyre_herositalic,  tex_gyre_herosregular,     Helvetica, Arial, 'Microsoft YaHei' ,"Microsoft YaHei","黑体","宋体", sans-serif; 
+%font-family: Helvetica, tex_gyre_herositalic,  tex_gyre_herosregular,     Helvetica, Arial, 'Microsoft YaHei' ,"Microsoft YaHei","黑体","宋体", sans-serif; 
  % font-style: italic;
  %font-weight:400;
  font-size:16px;
@@ -286,7 +286,7 @@ color: #000;
    
 #flar  
 {
-font-family:Helvetica, tex_gyre_herosbold, TimesNewRoman-Bd,    Helvetica,   Arial, sans-serif;
+%font-family:Helvetica,    Arial, sans-serif;
  %  font-weight: 600;
 % font-style: italic;
 %color: #434e5e;
