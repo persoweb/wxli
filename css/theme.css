@@ -311,7 +311,7 @@ body {
   -webkit-font-smoothing: antialiased;
   color: #000;
   font-size: 18px;
-  font-family: 'RalewayMedium', 'Raleway',Raleway, Helvetica,    sans-serif;
+  font-family:   Helvetica,    sans-serif;
  background:  #f5f1e5;
  %  background: url(yepaper.jpg);
   %  background-size: cover;
