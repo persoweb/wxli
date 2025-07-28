@@ -889,8 +889,8 @@ a {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   font-weight: 500;
-  %color:#0a73b4;
-color:	#006666;
+   color:#0a73b4;
+%color:	#006666;
 }
 a:hover,
 a.hover,
