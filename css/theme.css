@@ -1960,7 +1960,7 @@ label.error {
   font-weight:bold;
   margin-bottom: 5px;
   margin-top: 15px;
-  font-family:  Times New Roman,  TimesNewRomanBo, tex_gyre_herosbold,TimesNewRoman-Bd;
+  font-family:  'RalewayBold', Times New Roman,   tex_gyre_herosbold,TimesNewRoman-Bd;
 }
 /*--------------------------------------------------------------------------------------------------------------------
  * Blog
