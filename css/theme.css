@@ -240,7 +240,9 @@ line-height: 26px;
    
   }
 
-
+.text-center {
+  text-align: center !important; 
+ }
 
   ol li a{
  	 text-align: justify;
