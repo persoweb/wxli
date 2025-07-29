@@ -227,7 +227,7 @@ label:after{
 
 ol li{
 
- list-style-position: inside;
+ list-style-position: outside;
 list-style-type: decimal-leading-zero;
  % list-style-type: none;
  font-family:  Helvetica,    Arial,   sans-serif;
