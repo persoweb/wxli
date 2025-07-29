@@ -103,7 +103,7 @@
 
 
 @font-face {
-    font-family: 'RalewaySemiBoldItalic';
+    font-family: 'Raleway';
     src: url('Raleway-SemiBoldItalic.eot');
     src: url('Raleway-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
         url('Raleway-SemiBoldItalic.woff2') format('woff2'),
@@ -116,7 +116,7 @@
 }
 
 @font-face {
-    font-family: 'RalewaySemiBold';
+    font-family: 'Raleway';
     src: url('Raleway-SemiBold.eot');
     src: url('Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
         url('Raleway-SemiBold.woff2') format('woff2'),
@@ -129,7 +129,7 @@
 }
 
 @font-face {
-    font-family: 'RalewayMedium';
+    font-family: 'Raleway';
     src: url('Raleway-Medium.eot');
     src: url('Raleway-Medium.eot?#iefix') format('embedded-opentype'),
         url('Raleway-Medium.woff2') format('woff2'),
@@ -142,7 +142,7 @@
 }
 
 @font-face {
-    font-family: 'RalewayMediumItalic';
+    font-family: 'Raleway';
     src: url('Raleway-MediumItalic.eot');
     src: url('Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'),
         url('Raleway-MediumItalic.woff2') format('woff2'),
@@ -155,7 +155,7 @@
 }
 
 @font-face {
-    font-family: 'RalewayItalic';
+    font-family: 'Raleway';
     src: url('Raleway-Italic.eot');
     src: url('Raleway-Italic.eot?#iefix') format('embedded-opentype'),
         url('Raleway-Italic.woff2') format('woff2'),
@@ -168,7 +168,7 @@
 }
 
 @font-face {
-    font-family: 'RalewayRegular';
+    font-family: 'Raleway';
     src: url('Raleway-Regular.eot');
     src: url('Raleway-Regular.eot?#iefix') format('embedded-opentype'),
         url('Raleway-Regular.woff2') format('woff2'),
@@ -181,7 +181,7 @@
 }
 
 @font-face {
-    font-family: 'RalewayBoldItalic';
+    font-family: 'Raleway';
     src: url('Raleway-BoldItalic.eot');
     src: url('Raleway-BoldItalic.eot?#iefix') format('embedded-opentype'),
         url('Raleway-BoldItalic.woff2') format('woff2'),
@@ -194,7 +194,7 @@
 }
 
 @font-face {
-    font-family: 'RalewayBold';
+    font-family: 'Raleway';
     src: url('Raleway-Bold.eot');
     src: url('Raleway-Bold.eot?#iefix') format('embedded-opentype'),
         url('Raleway-Bold.woff2') format('woff2'),
@@ -230,7 +230,7 @@ ol li{
  list-style-position: inside;
 list-style-type: decimal-leading-zero;
  % list-style-type: none;
- font-family:  Helvetica,tex_gyre_herosregular,TimesNewRoman-Rm,   Helvetica,    Arial,   sans-serif;
+ font-family:  Helvetica,    Arial,   sans-serif;
 font-size:16px;
  %text-align: justify;
  color:#000;
@@ -261,7 +261,7 @@ line-height: 26px;
 }
 
 .mdi{
-  font-family:   Helvetica,  tex_gyre_herosregular, Helvetica, Arial, sans-serif;
+  font-family:   Helvetica,    Arial, sans-serif;
 %font-weight:300;
  font-size:14px;
 text-align: justify;
@@ -1963,7 +1963,7 @@ label.error {
   font-weight:bold;
   margin-bottom: 5px;
   margin-top: 15px;
-  font-family:   Times New Roman,  'RalewayBold', tex_gyre_herosbold,TimesNewRoman-Bd;
+  font-family:  'Raleway',  Times New Roman,Sans-serif;
 }
 /*--------------------------------------------------------------------------------------------------------------------
  * Blog
