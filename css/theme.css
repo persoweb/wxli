@@ -1123,8 +1123,9 @@ label.error {
 
 .active
 {
- color: #fff;
+  color: #fff;
   background: #0a73b4;
+  border-color: #0a73b4;
 }
 
 
@@ -1957,12 +1958,12 @@ label.error {
 }
 .section-page-header .title {
   color: #000;
-  font-size: 26px;
+  font-size: 30px;
   padding: 0;
   font-weight:bold;
   margin-bottom: 5px;
   margin-top: 15px;
-  font-family:  'RalewayBold', Times New Roman,   tex_gyre_herosbold,TimesNewRoman-Bd;
+  font-family:   Times New Roman,  'RalewayBold', tex_gyre_herosbold,TimesNewRoman-Bd;
 }
 /*--------------------------------------------------------------------------------------------------------------------
  * Blog
