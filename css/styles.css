@@ -11,11 +11,11 @@ Author URL: http://webthemez.com
 @font-face {
     font-family: 'Raleway';
     src: url('Raleway-Regular.eot');
-    src: url('fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Raleway-Regular.woff2') format('woff2'),
-        url('fonts/Raleway-Regular.woff') format('woff'),
-        url('fonts/Raleway-Regular.ttf') format('truetype'),
-        url('fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
+    src: url('https://persoweb.github.io/wxli/fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+        url('https://persoweb.github.io/wxli/fonts/Raleway-Regular.woff2') format('woff2'),
+        url('https://persoweb.github.io/wxli/fonts/Raleway-Regular.woff') format('woff'),
+        url('https://persoweb.github.io/wxli/fonts/Raleway-Regular.ttf') format('truetype'),
+        url('https://persoweb.github.io/wxli/fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
