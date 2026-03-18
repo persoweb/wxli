@@ -60,7 +60,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   font-family: robotocondensedbold,sans-serif;
 }
@@ -96,7 +96,7 @@ hr {
 .section-header .section-title {
  font-family: robotocondensedbold,sans-serif;
   font-size: 16px;
-  color: #000;
+  color: #696969;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 10px;
