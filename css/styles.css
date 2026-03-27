@@ -201,6 +201,7 @@ text-transform: uppercase;
 **************************/
 #main-nav.navbar-default {
 background: #FFFFFF;
+font-size:16px;
 }
 
 #main-nav.navbar-default .navbar-nav > li.active > a, #main-nav.navbar-default .navbar-nav > li.open > a, #main-nav.navbar-default .navbar-nav > li:hover > a {
