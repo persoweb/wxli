@@ -34,14 +34,14 @@ Author URL: http://webthemez.com
 }
 
 ol li{
-%list-style-position: inside;
-%list-style-type: decimal-leading-zero;
-  list-style-type: none;
+ list-style-position: outside;
+ list-style-type: decimal-leading-zero;
+ % list-style-type: none;
  %text-align: justify;
 % color:#000;
 %  Font-weight:400; 
 %line-height: 26px;
- margin:  12px  0px 12px 0px; 
+ margin:  12px  0px 12px 30px; 
   }
   
 
@@ -58,10 +58,10 @@ body {
  
 h2{
   font-size: 24px;
-  font-weight: 400;
-	 letter-spacing: 1px;
+  font-weight: 600;
+	 %letter-spacing: 1px;
 	 color: #000;
-  font-family: robotocondensedbold,sans-serif;
+ % font-family: robotocondensedbold,sans-serif;
 }
 
 h1,
@@ -103,12 +103,12 @@ hr {
   margin-bottom: 5px;
 }
 .section-header .section-title {
- font-family: robotocondensedbold,sans-serif;
-  font-size: 16px;
+% font-family: robotocondensedbold,sans-serif;
+  font-size: 18px;
   color: #000;
-  text-transform: uppercase;
+%  text-transform: uppercase;
   position: relative;
-  letter-spacing: 1px;
+  %letter-spacing: 1px;
   padding-bottom: 10px;
   margin: 0 0 8px;  
 border-bottom: 2px solid #0a73b4;
