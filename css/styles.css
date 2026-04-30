@@ -7,6 +7,14 @@ Author URL: http://webthemez.com
 *******Typography******
 **************************/
 
+/* 手机端隐藏 */
+@media (max-width: 768px) {
+  .desktop-only-img {
+    display: none !important;
+  }
+}
+
+
 @font-face {
     font-family: 'robotocondensedbold';
     src: url('https://persoweb.github.io/wxli/fonts/robotocondensed-bold-webfont.eot');
