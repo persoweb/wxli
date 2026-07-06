@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Wei-Xi Li</title>
+ <script src="js/bootstrap.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} });
+</script> <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+  
+
+    <style>
+
+/*mobel phone style */
+
+@media screen and (max-width: 767px) {
+    /*moble phone nav style*/
+
+    .navbar-nav {
+        background: #FFF;
+    }
+
+    .header-menu {
+        margin-left: 0px;
+    }
+
+    /*moble phone leftbar style*/
+
+
+    .leftbar {
+        display: none;
+    }
+
+    .col-md-12 {
+        padding-top: 10px;
+    }
+
+    #banner_container {
+        display: none;
+    }
+
+    #main-container {
+        margin: 0 5% 0 5%;
+        padding: 0;
+    }
+    .leftbar {
+        display: none;
+    }
+
+    .col-md-12 {
+        padding-top: 10px;
+    }
+
+    #banner_container {
+        display: none;
+    }
+
+    #main-container {
+        margin: 0 5% 0 5%;
+        padding: 0;
+    }
+
+
+    /*mobel phone banner style*/
+    #banner_container {
+        display: none;
+    }
+
+    #main-container {
+        margin: 0 5% 0 5%;
+        padding: 0;
+    }
+
+    /*mobel footer*/
+    .copyright, .copyright a {
+        color: black;
+        font-size: 14px;
+        text-align: center;
+        margin: 40px auto;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /*moble phone nav style*/
+
+    .header-menu {
+        float: right;
+        margin-left: 0;
+    }
+
+    /*moble phone leftbar style*/
+
+
+    .leftbar {
+        display: none;
+    }
+
+    .col-md-12 {
+        padding-top: 10px;
+    }
+
+    #banner_container {
+        display: none;
+    }
+
+    #main-container {
+        margin: 0 5% 0 5%;
+        padding: 0;
+    }
+    .leftbar {
+        display: none;
+    }
+
+    .col-md-12 {
+        padding-top: 10px;
+    }
+
+    #banner_container {
+        display: none;
+    }
+
+    #main-container {
+        margin: 0 5% 0 5%;
+        padding: 0;
+    }
+
+
+    /*mobel phone banner style*/
+    #banner_container {
+        display: none;
+    }
+
+    #main-container {
+        margin: 0 5% 0 5%;
+        padding: 0;
+    }
+
+    /*mobel footer*/
+    .copyright, .copyright a {
+        color: black;
+        font-size: 14px;
+        text-align: center;
+        margin: 40px auto;
+    }
+}
+
+
+/*End public style*/
+
+
+ol li{
+% list-style-position: outside;
+ list-style-type: decimal-leading-zero;
+ %font-size: 1.18rem;
+font-size: 16px;
+  list-style-type: none;
+% margin:  12px  0px 12px  0px; 
+margin-bottom: 0.6rem;
+            border-bottom: 1px solid #edf2f7;
+            padding-bottom: 0.6rem;
+           % transition: 0.1s;
+  }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f0f2f5;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+            line-height: 1.5;
+            padding: 2rem 1rem;
+            color: #1e293b;
+        }
+
+        /* 主容器：卡片风格，类似现代学术个人页 */
+        .paper-container {
+            max-width: 980px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 28px;
+            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.02);
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+
+        /* 头部区域: 姓名 + 身份 + 联系信息 */
+        .profile-header {
+            padding: 2rem 2rem 1.25rem 2rem;
+            border-bottom: 1px solid #eef2f6;
+            background: #fefefe;
+        }
+
+        .name {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            background: linear-gradient(135deg, #1e2b3c, #2c4b6e);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 0.3rem;
+        }
+
+.journal
+{
+color: #000;
+font-style:italic;
+}
+
+        .title {
+            font-size: 16px;
+            font-weight: 500;
+            color: #4b5565;
+            margin-bottom: 1rem;
+        }
+
+        .info-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin-top: 0.5rem;
+            align-items: center;
+        }
+
+        .info-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.9rem;
+            background: #f8fafc;
+            padding: 0.3rem 0.9rem;
+            border-radius: 40px;
+            color: #1f3a4b;
+            border: 1px solid #e2e8f0;
+        }
+
+        .info-item i, .info-item .emoji {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        .github-link {
+            text-decoration: none;
+            color: #1e3a5f;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        .github-link:hover {
+            color: #0f2b3f;
+            text-decoration: underline;
+        }
+
+        /* 论文列表主体 */
+        .papers-list {
+            padding: 0.8rem 2rem 0.8rem 2rem;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: -0.2px;
+            color: #0c2d3f;
+            %border-left: 4px solid #2c7da0;
+            %padding-left: 1rem;
+            margin-bottom: 0.8rem;
+        }
+
+        /* 每条论文卡片 */
+        .paper-entry {
+            margin-bottom: 0.6rem;
+            border-bottom: 1px solid #edf2f7;
+            padding-bottom: 0.6rem;
+            transition: 0.1s;
+        }
+
+        .paper-entry:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .paper-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #0f2d40;
+           % margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .authors {
+            font-size: 0.9rem;
+            color: #4a5b6e;
+            margin-bottom: 0.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.2rem;
+        }
+
+        .authors span {
+            background: #f1f5f9;
+            padding: 0.1rem 0.4rem;
+            border-radius: 16px;
+            font-size: 0.8rem;
+        }
+
+        .status {
+            display: inline-block;
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+            background: #eef2ff;
+            padding: 0.2rem 0.7rem;
+            border-radius: 20px;
+            color: #1f4a6e;
+        }
+
+        .status-submitted {
+            background: #e6f7f0;
+            color: #1e6f3f;
+            border-left: 3px solid #2c9b5e;
+            padding-left: 0.6rem;
+        }
+
+        .status-toappear {
+            background: #fff0db;
+            color: #b45309;
+            border-left: 3px solid #e68a2e;
+            padding-left: 0.6rem;
+        }
+
+        .journal-name {
+            font-size: 0.85rem;
+            margin-top: 0.4rem;
+            color: #5d6f83;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+        }
+
+        .journal-name strong {
+            font-weight: 600;
+            color: #3c5a73;
+        }
+
+        .divider-meta {
+            height: 1px;
+            background: linear-gradient(to right, #e0e7ef, transparent);
+            margin: 1.2rem 0 0.8rem;
+        }
+
+        /* 响应式 */
+        @media (max-width: 640px) {
+            .profile-header {
+                padding: 1.5rem;
+            }
+            .papers-list {
+                padding: 1.2rem 1.5rem 2rem 1.5rem;
+            }
+            .name {
+                font-size: 1.5rem;
+            }
+           ol li{
+% list-style-position: outside;
+ %list-style-type: decimal-leading-zero;
+ font-size: 16px;
+  list-style-type: none;
+ %text-align: justify;
+% color:#000;
+%  Font-weight:400; 
+%line-height: 26px;
+% margin:  12px  0px 12px 30px; 
+margin-bottom: 0.6rem;
+            border-bottom: 1px solid #edf2f7;
+            padding-bottom: 0.6rem;
+            transition: 0.1s;
+  }
+            .paper-title {
+                font-size: 16px;
+            }
+            .info-item {
+                font-size: 0.8rem;
+            }
+        }
+
+        /* 模拟emoji/简单图标 */
+        .icon-em {
+            font-size: 16px;
+            display: inline-block;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 1.2rem;
+            font-size: 0.7rem;
+            color: #7e8b9c;
+        }
+
+/* 媒体对象核心样式：Flex 并排，桌面端完全水平 */
+        .media-object {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            background: #ffffff;
+            %border-radius: 2rem;
+           % box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.02);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(0px);
+        }
+        
+        .media-object:hover {
+           % transform: translateY(-4px);
+           % box-shadow: 0 20px 32px -12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* 图片容器：固定宽度 (桌面端优雅比例) */
+        .media-image {
+            flex: 0 0 150px;
+            overflow: hidden;
+            border-radius: 1.25rem;
+            margin: 1rem 0 1rem 1rem;
+           % box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+            transition: transform 0.4s ease;
+        }
+        
+        /* 悬浮时图片微微放大 (增加精致感) */
+        .media-object:hover .media-image {
+           % transform: scale(1.02);
+        }
+        
+        .media-image img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+           % aspect-ratio: 4 / 3;  /* 统一比例，保证视觉整洁 */
+            transition: transform 0.5s ease;
+        }
+
+a {
+  color: #0a73b4;
+  -webkit-transition: color 400ms, background-color 400ms;
+  -moz-transition: color 400ms, background-color 400ms;
+  -o-transition: color 400ms, background-color 400ms;
+  transition: color 400ms, background-color 400ms;
+text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #000;
+}
+
+
+    </style>
+</head>
+<body>
+<div class="paper-container">
+        <div class="profile-header">
+
+<div class="media-object">
+
+<div class="media-image leftbar">
+                <img class="hide-on-mobile" src="li.jpg" loading="lazy">
+            </div>
+
+ <div >
+
+        <div class="name">Wei-Xi LI</div>
+        <div class="title">Professor, Wuhan University</div>
+        <div class="info-row">
+         <p class="wow"><a href="https://persoweb.github.io/wxli/CV.pdf" style="font-style: italic;"> Curriculum Vitae </a>
+				<br>
+				School of Mathematics and Statistics,Wuhan University, Wuhan
+            430072, China<br> <a href="mailto:wei-xi.li@whu.edu.cn"> wei-xi.li@whu.edu.cn </a>  
+</p>  
+</div>
+        </div>  
+             
+        </div>
+    </div>
+
+ <div class="papers-list">
+        <div class="section-title">Links</div>
+<p class="wow"> 
+ <a href="https://arxiv.org/list/math.AP/recent">arXiv </a> / 
+                                  <a href="https://mathscinet.ams.org/mathscinet/">MathNetSci</a> / 
+                 
+                <a href="https://orcid.org/0000-0003-2990-0566">Orcid</a> /  <a href="https://uc.whu.edu.cn/xl.htm">Calendar</a>
+</p> 
+</div>
+
+
+
+<div class="papers-list">
+        <div class="section-title">Editorial Boards</div>
+
+ <ul style=" list-style-type: none; color:#000;">
+
+<li><a style="color:#000;" href="https://www.aimsciences.org/DCDS-B">Discrete and Continuous Dynamical Systems - Series B (DCDS-B)</a>, 2021 to present </li>
+<li><a style="color:#000;" href="https://www.global-sci.com/cmaa">Communications in Mathematical Analysis and Applications</a>, 2022 to present </li>
+<li><a style="color:#000;" href="https://www.aimsciences.org/krm">Kinetic and Related Models</a>, 2025 to present </li>
+<li><a style="color:#000;" href="https://www.global-sci.com/jpde/about/editorialMasthead">Journal of Partial Differential Equations</a>, 2025 to present </li>
+</ul>
+</div>
+
+
+    <div class="papers-list">
+        <div class="section-title">Publications</div>
+
+              
+   <ol reversed="" style="padding:0px;">
+ 
+ 
+
+<li> Hao-Guang Li, Wei-Xi Li, Chao-Jiang Xu
+                <div class="paper-title">  Local well-posedness for the Boltzmann equation with hard potentials </div>
+          
+<a class="journal"  href="">
+                  </a> Preprint. arXiv:2602.19148  <br>
+
+<div> <a class=""  href="https://arxiv.org/abs/2602.19148">
+                  arXiv</a>  &nbsp;&nbsp; <a href="">   </a>   &nbsp;&nbsp; </div>
+              </li>
+					 
+		 		 
+
+<li> Wei-Xi Li, Zhan Xu, Anita Yang
+                <div class="paper-title">  Global Well-Posedness for the 2D and 3D Prandtl-Shercliff Model </div>
+          
+<a class="journal"  href="">
+                  </a> Preprint. arXiv:2511.02338  <br>
+
+<div> <a class=""  href="https://arxiv.org/abs/2511.02338">
+                  arXiv</a>  &nbsp;&nbsp; <a href="">   </a>   &nbsp;&nbsp; </div>
+              </li>
+
+
+					 <li> Wei-Xi Li,  Lvqiao Liu, Hao Wang
+                <div class="paper-title">  On the radius of analyticity and Gevrey regularity for the Boltzmann equation </div>
+          
+<a class="journal"  href="">
+                  </a> Preprint. arXiv:2601.13560  <br>
+
+<div> <a class=""  href="https://arxiv.org/abs/2601.13560">
+                  arXiv</a>  &nbsp;&nbsp; <a href="">   </a>   &nbsp;&nbsp;  </div>
+              </li>
+
+					 <li> Wei-Xi Li, Zhan Xu, Ping Zhang
+                <div class="paper-title">  Global Gevrey solution of 3D anisotropic Navier-Stokes system in a strip domain </div>
+          
+<a class="journal"  href="">
+                  </a> Preprint. arXiv:2511.15050  <br>
+
+<div> <a class=""  href="https://arxiv.org/abs/2511.15050">
+                  arXiv</a>  &nbsp;&nbsp; <a href="">   </a>   &nbsp;&nbsp; </div>
+              </li>
+
+					
+					 
+					 
+                   <li> Ling-Bing He, Jie Ji and Wei-Xi Li. <div class="paper-title">
+              On the Boltzmann equation with soft potentials: Existence, uniqueness and smoothing effect of mild solutions. </div>
+                 Preprint. arXiv:2410.13205 
+<div> <a class="  marr" href="https://arxiv.org/abs/2410.13205">
+                     arXiv </a>   &nbsp;&nbsp;  </div>
+              </li>
+
+
+
+<li>Wei-Xi Li, Zhan Xu
+                <div class="paper-title">  Gevrey well-posedness of the hydrostatic MHD-wave system </div>
+          
+<a class="journal"  href="">
+                  </a> Communications on Pure and Applied Analysis, doi: 10.3934/cpaa.2026042  <br>
+
+<div> <a class=""  href="https://arxiv.org/abs/2512.06405">
+                  arXiv</a>  &nbsp;&nbsp; <a href="">   </a>   &nbsp;&nbsp; <a class="collapsed  " data-toggle="collapse" data-parent="#accordion"
+                  href="#260222-1">   
+                </a>
+                 </div>
+              </li>					 
+<li>   Wei-Xi Li, Chao-Jiang Xu, Zhan Xu
+	<div class="paper-title">
+		Analyticity up to the Boundary for the 2D
+and 3D Prandtl Equations </div>
+	<a class="journal"  href="https://www.global-sci.com/cmaa">
+		Commun. Math. Anal. Appl.  
+	</a>  5(2026), 311-378 
+
+	<div> <a href="https://www.global-sci.com/cmaa/article/view/24266">  DOI </a>   &nbsp;&nbsp;   </div>
+             
+</li>
+
+
+
+<li>   Wei-Xi Li, Tong Yang, Ping Zhang 
+	<div class="paper-title">
+		Analyticity up to the boundary for the Prandtl and Navier-Stokes equations </div>
+	<a class="journal"  href="https://www.lms.ac.uk/publications/jlms">
+		 J. Lond. Math. Soc. 
+	</a>  (2) 113 (2026), no. 6, Paper No. e70604 
+
+	<div> <a href="https://doi.org/10.1112/jlms.70604">  DOI </a>   &nbsp;&nbsp;   </div>
+             
+</li>
+					 
+ <li> 
+ Wei-Xi Li, Zhan Xu and Anita Yang
+                <div class="paper-title"> Global well-posedness of the MHD boundary layer equations in the Sobolev Space </div>
+                <a class="journal" > Sci. China Math.</a> 69 (2026), 1511–1536. 
+
+<div> <a class="  marr" href="https://arxiv.org/abs/2409.11009">
+                     arXiv </a>   &nbsp;&nbsp; <a href="https://doi.org/10.1007/s11425-025-2456-6"> DOI </a> </div>
+              </li>
+
+<li>   Qi An, Xin Hu, Wei-Xi Li 
+	<div class="paper-title">
+		Regularization effect of the Boltzmann equation under Navier-Stokes type scaling.</div>
+	<a class="journal"  href="https://link.springer.com/journal/10473">
+		Acta Math. Sci.  Ser. B   
+	</a> 45 (2025), no. 6, 2607–2628
+
+	<div> <a href="https://doi.org/10.1007/s10473-025-0613-9">  DOI </a>   &nbsp;&nbsp;   </div>
+             
+</li>
+
+
+	
+					 
+ <li>Wei-Xi Li, Xiaojing Xu and Tianyuan Yu
+                <div class="paper-title">  On the hydrostatic approximation of the 3D Boussinesq equations of damped wave type </div>
+          
+<a class="journal"  href="https://siam.org/publications/journals/siam-journal-on-mathematical-analysis-sima">
+                  SIAM J. Math. Anal. </a>  57 (2025), no. 3, 2952–2982 <br>
+
+<div> <a href="https://doi.org/10.1137/24M1661303">  DOI </a>   &nbsp;&nbsp;   </div>
+              </li>
+
+
+ <li> Jun-Ling Chen, Wei-Xi Li and Chao-Jiang Xu
+                <div class="paper-title"> Sharp regularization effect for the non-cutoff Boltzmann equation with hard potentials </div>
+                 <a class="journal"  href="https://ems.press/journals/aihpc">
+                   Ann. Inst. H. Poincaré C Anal. Non Linéaire </a> 42 (2025), no. 4, 933–970.
+
+<div> <a  href="https://arxiv.org/abs/2205.02992">
+                     arXiv </a>   &nbsp;&nbsp;  <a href="https://doi.org/10.4171/AIHPC/121">   DOI </a>   &nbsp;&nbsp;   
+                 </div>
+              </li>
+
+
+
+
+ <li>Ke Chen, Wei-Xi Li and Tong Yang. 
+                <div class="paper-title"> Local Well-Posedness of the Three Dimensional Linearized MHD Boundary Layer System. </div>
+                <a class="journal"  href="https://www.global-sci.org/cmaa">
+                    Communications in Mathematical Analysis and Applications</a>
+                3(2024), No. 4, 483-500 
+
+<div>         <a href="https://global-sci.com/article/91609/local-well-posedness-of-the-three-dimensional-linearized-mhd-boundary-layer-system?q=%2Farticle%2F91609%2Flocal-well-posedness-of-the-three-dimensional-linearized-mhd-boundary-layer-system">
+                      DOI </a>   
+                 </div> 
+              </li>
+
+
+              <li> Wei-Xi Li, Marius Paicu and Ping Zhang
+                <div class="paper-title"> Gevrey solutions of quasi-linear hyperbolic
+                  hydrostatic Navier-Stokes system </div>
+                 <a class="journal"  href="https://siam.org/publications/journals/siam-journal-on-mathematical-analysis-sima">
+                  SIAM Journal on Mathematical Analysis </a>  55 (2023), no. 6, 6194–6228 <br>
+
+<div> <a href="https://doi.org/10.1137/22M1526290">  DOI </a>   &nbsp;&nbsp;  </div>
+              </li>
+
+ <li> Wei-Xi Li, Tong Yang and Ping Zhang
+                <div class="paper-title">Gevrey well-posedness of quasi-linear hyperbolic Prandtl equations </div>
+                 <a class="journal"  href="https://www.global-sci.org/cmaa">
+                    Communications in Mathematical Analysis and Applications </a>  2 (2023), no. 4, 388–420
+                
+
+<div>   <a href="https://doi.org/10.4208/cmaa.2023-0007">   DOI </a>   &nbsp;&nbsp;   </div>
+              </li>
+
+
+
+              <li> Hongmei Cao, Wei-Xi Li and Chao-Jiang Xu
+                <div class="paper-title"> Analytic smoothing effect of the spatially
+                  inhomogeneous Landau equations for hard potentials. </div>
+<a class="journal"  href="https://www.sciencedirect.com/journal/journal-de-mathematiques-pures-et-appliquees">
+                  Journal de Mathématiques Pures et Appliquées</a> 176 (2023), 138–182.
+               
+           <div>       <a class="  marr" href="https://arxiv.org/abs/2205.02992">
+                     arXiv </a>  &nbsp;&nbsp;    <a href="https://doi.org/10.1016/j.matpur.2023.06.004">
+                      DOI </a>   &nbsp;&nbsp;  </div>      
+     </li>
+
+              <li> Wei-Xi Li, Rui Xu and Tong Yang
+                <div class="paper-title"> Global Well-posedness of a Prandtl Model from
+                  MHD in Gevrey Function Spaces. </div>
+               <a class="journal" href="https://www.springer.com/journal/10473">
+                    Acta Mathematica Scientia, </a> 42(2022), no. 6, 2343-2366.
+                  Dedicated to Professor Banghe LI on the occasion of his 80th
+                  birthday 
+
+ <div>       <a class="  marr" href="https://arxiv.org/abs/2208.06078">
+                     arXiv </a>  &nbsp;&nbsp;    <a href="https://doi.org/10.1007/s10473-022-0609-7">
+                      DOI </a>   &nbsp;&nbsp;   </div> 
+              </li>
+
+              <li> Wei-Xi Li and Tong Yang,
+                <div class="paper-title"> 3D hyperbolic Navier-Stokes equations in a thin
+                  strip: global well-posedness and hydrostatic limit in Gevrey
+                  space. </div>
+                <a class="journal"  href="https://www.global-sci.org/cmaa">
+                    Communications in Mathematical Analysis and Applications,</a>
+                  1 (2022), 471-502.  
+
+<div>       <a class="  marr" href="https://arxiv.org/abs/2204.09173">
+                     arXiv </a>  &nbsp;&nbsp;    <a href="https://doi.org/10.4208/cmaa.2022-0007">
+                      DOI </a>   &nbsp;&nbsp;  </div> 
+              </li>
+
+
+              <li> Wei-Xi Li and Rui Xu,
+                <div class="paper-title"> Gevrey well-posedness of the hyperbolic Prandtl
+                  equations. </div>
+               <a class="journal" href="https://www.global-sci.org/cmr.html">
+                    Communications in Mathematical Research, </a> 38 (2022),
+                  no. 4, 605–624. In honor of Professor Chao-Jiang Xu on the
+                  occasion of his 65th birthday
+
+<div>       <a class="  marr" href="https://arxiv.org/abs/2112.10450">
+                     arXiv </a>  &nbsp;&nbsp;    <a href="https://doi.org/10.4208/cmr.2021-0104">
+                      DOI </a>   </div> 
+              </li>
+
+
+              <li>Wei-Xi Li, Nader Masmoudi and Tong Yang.
+                <div class="paper-title"> Well-posedness in Gevrey function space for 3D
+                  Prandtl equations without Structural Assumption. </div>
+                <a class="journal" href="https://onlinelibrary.wiley.com/journal/10970312">
+                  Communications on Pure and Applied Mathematics</a> 75(2022),
+                1755–1797. <br>
+                
+                <div> <a class="  marr" href="https://arxiv.org/abs/2001.10222">
+                    arxiv </a> • <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/cpa.21989">
+                    DOI </a>  
+                </div>
+              </li>
+
+              <li>Renjun Duan, Wei-Xi Li and Lvqiao Liu,
+                <div class="paper-title"> Gevrey regularity of a mild solution to the
+                  non-cutoff Boltzmann equation. </div>
+                <a class="journal" href="https://www.sciencedirect.com/journal/advances-in-mathematics">Advances
+                  in Mathematics</a> 395 (2022), Paper No. 108159, 75pp.
+                
+                <div> <a class="  marr" href="https://arxiv.org/abs/2105.00474">
+                    arXiv </a> • <a href="https://doi.org/10.1016/j.aim.2021.108159"
+                    class="  marr">
+                    DOI </a>  
+                </div>
+
+
+              </li>
+              <li> Hua Chen, Xin Hu, Wei-Xi Li and Jinpeng Zhan,
+                <div class="paper-title"> The Gevrey smoothing effect for the spatially
+                  inhomogeneous Boltzmann equations without cut-off. </div>
+                <a class="journal" href="https://www.springer.com/journal/11425/editors">
+                  Science China Mathematics </a> 65 (2022), no. 3, 443–470
+                <div id="boxchlz02" class="mdi" style="display:none">
+                  <pre>@article {MR4375857,
+    AUTHOR = {Chen, Hua and Hu, Xin and Li, Wei-Xi and Zhan, Jinpeng},
+     TITLE = {The {G}evrey smoothing effect for the spatially inhomogeneous
+              {B}oltzmann equations without cut-off},
+   JOURNAL = {Sci. China Math.},
+  FJOURNAL = {Science China. Mathematics},
+    VOLUME = {65},
+      YEAR = {2022},
+    NUMBER = {3},
+     PAGES = {443--470},
+      ISSN = {1674-7283},
+   MRCLASS = {35B65 (35H10 35Q20)},
+  MRNUMBER = {4375857},
+       DOI = {10.1007/s11425-021-1886-9},
+       URL = {https://doi.org/10.1007/s11425-021-1886-9},
+}
+</pre> </div>
+                <div> <a class="  marr" href="https://arxiv.org/abs/1805.12543">
+                    arXiv </a> • <a href="https://doi.org/10.1007/s11425-021-1886-9"
+                    class="  marr">
+                    DOI </a>  
+                </div>
+              </li>
+              <li> Wei-Xi Li and Rui Xu.
+                <div class="paper-title"> Well-posedness in Sobolev spaces of the
+                  two-dimensional MHD Boundary layer equations without
+                  viscosity. </div>
+                <a class="journal" href="https://www.aimsciences.org/journal/A0000-0004">
+                  Electronic Research Archive</a> 29 (2021), no. 6, 4243-4255
+                <div id="lx202106" class="mdi" style="display:none">
+                  <pre>@article {MR4342301,
+    AUTHOR = {Li, Wei-Xi and Xu, Rui},
+     TITLE = {Well-posedness in {S}obolev spaces of the two-dimensional
+              {MHD} boundary layer equations without viscosity},
+   JOURNAL = {Electron. Res. Arch.},
+  FJOURNAL = {Electronic Research Archive},
+    VOLUME = {29},
+      YEAR = {2021},
+    NUMBER = {6},
+     PAGES = {4243--4255},
+   MRCLASS = {35Q35 (76D10 76W05)},
+  MRNUMBER = {4342301},
+       DOI = {10.3934/era.2021082},
+       URL = {https://doi.org/10.3934/era.2021082},
+}</pre>
+                </div>
+                <div> <a class="  marr" href="https://arxiv.org/abs/2106.01563">
+                    arXiv </a> • <a href="https://doi.org/10.3934/era.2021082"
+                    class="  marr">
+                    DOI </a>  
+                </div>
+              </li>
+              <li> Wei-Xi Li and Chao-Jiang Xu.
+                <div class="paper-title"> Subellipticity of some complex vector fields
+                  related to Witten Laplacian. </div>
+                <a class="journal" href="http://www.aimsciences.org/journal/1534-0392">
+                  Communications on Pure and Applied Analysis</a> 20 (2021), no.
+                7-8, 2709-2724. Special issue in Honor of the 80th birthday of
+                Professor Shuxing Chen.
+                <div id="lx202011" class="mdi" style="display:none">
+                  <pre>@article {MR4312130,
+    AUTHOR = {Li, Wei Xi and Xu, Chao Jiang},
+     TITLE = {Subellipticity of some complex vector fields related to the
+              {W}itten {L}aplacian},
+   JOURNAL = {Commun. Pure Appl. Anal.},
+  FJOURNAL = {Communications on Pure and Applied Analysis},
+    VOLUME = {20},
+      YEAR = {2021},
+    NUMBER = {7-8},
+     PAGES = {2709--2724},
+      ISSN = {1534-0392},
+   MRCLASS = {35H20 (35H10)},
+  MRNUMBER = {4312130},
+       DOI = {10.3934/cpaa.2021047},
+       URL = {https://doi.org/10.3934/cpaa.2021047},
+}
+</pre> </div>
+                <div> <a class="  marr" href="https://arxiv.org/abs/2011.05582">
+                    arXiv </a> • <a href="https://www.aimsciences.org/article/doi/10.3934/cpaa.2021047">DOI</a>
+                   
+                </div>
+              </li>
+              <li> Wei-Xi Li and Tong Yang,
+                <div class="paper-title"> Well-posedness of the MHD boundary layer system
+                  in Gevrey function space without Structural Assumption. </div>
+                <a class="journal" href="https://siam.org/journals/sima.php">
+                  SIAM Journal on Mathematical Analysis</a> 53 (2021), No.3,
+                3236-3264
+                <div id="ly202009" class="mdi" style="display:none">
+                  <pre>@article {MR4270479,
+    AUTHOR = {Li, Wei-Xi and Yang, Tong},
+     TITLE = {Well-posedness of the {MHD} {B}oundary {L}ayer {S}ystem in
+              {G}evrey {F}unction {S}pace without {S}tructural {A}ssumption},
+   JOURNAL = {SIAM J. Math. Anal.},
+  FJOURNAL = {SIAM Journal on Mathematical Analysis},
+    VOLUME = {53},
+      YEAR = {2021},
+    NUMBER = {3},
+     PAGES = {3236--3264},
+      ISSN = {0036-1410},
+   MRCLASS = {35Q35 (76W05)},
+  MRNUMBER = {4270479},
+       DOI = {10.1137/20M1367027},
+       URL = {http://doi.org/10.1137/20M1367027},
+}
+</pre> </div>
+                <div> <a class="  marr" href="https://arxiv.org/abs/2009.06513">
+                    arXiv </a> • <a href="http://doi.org/10.1137/20M1367027">
+                    DOI </a>  
+                </div>
+              </li>
+              <li style="margin-top: 15px; "> Wei-Xi Li and Juan Zeng.
+                <div class="paper-title"> Weighted and maximally hypoelliptic estimates
+                  for the Fokker-Planck Operator with electromagnetic fields. </div>
+                <a class="journal" href="https://www.global-sci.org/cmr.html">
+                  Communications in Mathematical Research</a> 37 (2021), pp.
+                255-270.
+                <div id="lz202012" class="mdi" style="display:none">
+                  <pre>@article {MR4238433,
+    AUTHOR = {Li, Wei-Xi and Zeng, Juan},
+     TITLE = {Weighted and maximally hypoelliptic estimates for the
+              {F}okker-{P}lanck operator with electromagnetic fields},
+   JOURNAL = {Commun. Math. Res.},
+  FJOURNAL = {Communications in Mathematical Research},
+    VOLUME = {37},
+      YEAR = {2021},
+    NUMBER = {2},
+     PAGES = {255--270},
+      ISSN = {1674-5647},
+   MRCLASS = {35H20 (35Q84 78A25)},
+  MRNUMBER = {4238433},
+       DOI = {10.4208/cmr.2020-0055},
+       URL = {http://doi.org/10.4208/cmr.2020-0055},
+}</pre>
+                </div>
+                <div> <a class="  marr" href="https://arxiv.org/abs/2012.10561">
+                    arXiv </a> • <a href="https://global-sci.org/intro/article_detail/cmr/18740.html"
+                    class="  marr">
+                    DOI </a>  
+                </div>
+              </li>
+              <li> Wei-Xi Li and Lvqiao Liu.
+                <div class="paper-title">Gelfand-Shilov smoothing effect for the spatially
+                  inhomogeneous Boltzmann equations without cut-off. </div>
+                <a class="journal" href="https://www.aimsciences.org/journal/1937-5093">
+                  Kinetic and Related Models </a> 13(2020), no. 5, 1029-1046
+                <div id="boxll20" class="mdi" style="display:none">
+                  <pre>@article {MR4147430,
+    AUTHOR = {Li, Wei-Xi and Liu, Lvqiao},
+     TITLE = {Gelfand-{S}hilov smoothing effect for the spatially
+              inhomogeneous {B}oltzmann equations without cut-off},
+   JOURNAL = {Kinet. Relat. Models},
+  FJOURNAL = {Kinetic and Related Models},
+    VOLUME = {13},
+      YEAR = {2020},
+    NUMBER = {5},
+     PAGES = {1029--1046},
+      ISSN = {1937-5093},
+   MRCLASS = {35Q20 (35B65 35H10)},
+  MRNUMBER = {4147430},
+       DOI = {10.3934/krm.2020036},
+       URL = {http://doi.org/10.3934/krm.2020036},
+}  </pre>
+                </div>
+                <div> <a href="" class="  marr"> arXiv </a> • <a href="https://www.aimsciences.org/article/doi/10.3934/krm.2020036"
+                    class="  marr">
+                    DOI </a>                  </div>
+              </li>
+              <li>Hua Chen, Xin Hu, Wei-Xi Li and Jinpeng Zhan.
+                <div class="paper-title"> The resolvent of the linearized Boltzmann
+                  operator with a stationary potential. </div>
+                <a class="journal" href="http://www.springer.com/birkhauser/mathematics/journal/11868">
+                  Journal of Pseudo-Differential Operators and Applications </a>
+                11 (2020), no. 2, 733–751
+                <div id="box22" class="mdi" style="display:none">
+                  <pre> @article {MR4098118,
+    AUTHOR = {Chen, Hua and Hu, Xin and Li, Wei-Xi and Zhan, Jinpeng},
+     TITLE = {The resolvent of the linearized {B}oltzmann operator with a
+              stationary potential},
+   JOURNAL = {J. Pseudo-Differ. Oper. Appl.},
+  FJOURNAL = {Journal of Pseudo-Differential Operators and Applications},
+    VOLUME = {11},
+      YEAR = {2020},
+    NUMBER = {2},
+     PAGES = {733--751},
+      ISSN = {1662-9981},
+   MRCLASS = {35Q20 (47A10)},
+  MRNUMBER = {4098118},
+       DOI = {10.1007/s11868-019-00305-2},
+       URL = {http://doi.org/10.1007/s11868-019-00305-2},
+} </pre>
+                </div>
+                <div> <a href="http://doi.org/10.1007/s11868-019-00305-2" class="  marr">
+                    DOI </a>  
+                </div>
+              </li>
+              <li>Wei-Xi Li and Tong Yang.
+                <div class="paper-title">Well-posedness in Gevrey function space for the
+                  Prandtl equations with non-degenerate critical points. </div>
+                <a class="journal" href="http://www.ems-ph.org/journals/journal.php?jrn=jems">
+                  Journal of the European Mathematical Society </a> , 22(2020)
+                717-775 <br>
+                <div id="box20" class="mdi" style="display:none">
+                  <pre>@article {MR4055987,
+    AUTHOR = {Li, Wei-Xi and Yang, Tong},
+     TITLE = {Well-posedness in {G}evrey function spaces for the {P}randtl
+              equations with non-degenerate critical points},
+   JOURNAL = {J. Eur. Math. Soc. (JEMS)},
+  FJOURNAL = {Journal of the European Mathematical Society (JEMS)},
+    VOLUME = {22},
+      YEAR = {2020},
+    NUMBER = {3},
+     PAGES = {717--775},
+      ISSN = {1435-9855},
+   MRCLASS = {35Q35 (35B30 35L60 35Q31)},
+  MRNUMBER = {4055987},
+       DOI = {10.4171/jems/931},
+       URL = {http://doi.org/10.4171/jems/931},
+}</pre>
+                </div>
+                <div> <a href="https://arxiv.org/abs/1609.08430" class="  marr">
+                    PDF </a> • <a href="http://doi.org/10.4171/jems/931" class="  marr">
+                    DOI </a>                  </div>
+              </li>
+              <li>Wei-Xi Li, Van-Sang Ngo and Chao-Jiang Xu.
+                <div class="paper-title">Boundary layer analysis for the fast horizontal
+                  rotating fluids. </div>
+                <a class="journal" href="http://intlpress.com/site/pub/pages/journals/items/cms/_home/_main/">
+                  Communications in Mathematical Sciences</a> 17(2019), 299-338
+                <br>
+                <div id="box21" class="mdi" style="display:none">
+                  <pre> @article {MR3983729,
+    AUTHOR = {Li, Wei-Xi and Ngo, Van-Sang and Xu, Chao-Jiang},
+     TITLE = {Boundary layer analysis for the fast horizontal rotating
+              fluids},
+   JOURNAL = {Commun. Math. Sci.},
+  FJOURNAL = {Communications in Mathematical Sciences},
+    VOLUME = {17},
+      YEAR = {2019},
+    NUMBER = {2},
+     PAGES = {299--338},
+      ISSN = {1539-6746},
+   MRCLASS = {35Q30 (35B25 35Q35 76U05)},
+  MRNUMBER = {3983729},
+       DOI = {10.4310/CMS.2019.v17.n2.a1},
+       URL = {http://doi.org/10.4310/CMS.2019.v17.n2.a1},
+} </pre>
+                </div>
+                <div> <a href="https://arxiv.org/abs/1611.04896" class=" marr">
+                    arXiv</a> • <a href="http://doi.org/10.4310/CMS.2019.v17.n2.a1"
+                    class=" marr">
+                    DOI </a> 
+                </div>
+              </li>
+              <li> Radjesvarane Alexandre, Frédéric Hérau and Wei-Xi Li.
+                <div class="paper-title">Global hypoelliptic and symbolic estimates for
+                  the linearized Boltzmann operator without angular cutoff. </div>
+                <a class="journal" href="https://www.journals.elsevier.com/journal-de-mathematiques-pures-et-appliquees/">
+                  Journal de Mathématiques Pures et Appliquées</a> 126(2019),
+                1–71
+                <div id="boxp1" class="mdi" style="display:none">
+                  <pre> @article {MR3950012,
+    AUTHOR = {Alexandre, Radjesvarane and H\'{e}rau, Fr\'{e}d\'{e}ric and Li, Wei-Xi},
+     TITLE = {Global hypoelliptic and symbolic estimates for the linearized
+              {B}oltzmann operator without angular cutoff},
+   JOURNAL = {J. Math. Pures Appl. (9)},
+  FJOURNAL = {Journal de Math\'{e}matiques Pures et Appliqu\'{e}es. Neuvi\`eme S\'{e}rie},
+    VOLUME = {126},
+      YEAR = {2019},
+     PAGES = {1--71},
+      ISSN = {0021-7824},
+   MRCLASS = {35Sxx (35B65 35H10 35H20 35Q20 82C40)},
+  MRNUMBER = {3950012},
+MRREVIEWER = {Luigi Rodino},
+       DOI = {10.1016/j.matpur.2019.04.013},
+       URL = {http://doi.org/10.1016/j.matpur.2019.04.013},
+}</pre>
+                </div>
+                <div> <a href="https://arxiv.org/abs/1212.4632" class="  marr">
+                    arXiv </a> • <a href="http://doi.org/10.1016/j.matpur.2019.04.013"
+                    class="  marr">
+                    DOI </a>  
+                </div>
+              </li>
+              <li> Wei-Xi Li.
+                <div class="paper-title"> Spectral Analysis for Fokker-Planck operator and
+                  Witten Laplacian (in Chinese)</div>
+                <a class="journal" href="http://engine.scichina.com/publisher/scp/journal/SSM?slug=Overview">
+                  SCIENTIA SINICA Mathematica </a> 49(2019),161-174. In Honor
+                of the 90th birthday of Professor Minyou Qi. <br>
+                <div id="survey1" style="display:none" class="mdi">
+                  <p> – In this survey paper we will review the classical
+                    hypoelliptic techniques and their global counterparts
+                    developed recently for the spectral analysis of the
+                    operators in mathematical physics. In particular we will
+                    focus on the compactness criteria for Fokker-Planck operator
+                    and Witten Laplacian and the close relationship between the
+                    two operators. </p>
+                </div>
+                <div> <a href="http://persoweb.whu.edu.cn/WittenLaplacian.pdf"
+                    class="  marr">
+                    PDF </a> • <a href="http://engine.scichina.com/publisher/scp/journal/SSM/doi/10.1360/N012018-00033"
+                    class="  marr">
+                    DOI </a> <span onclick="openShutManager(this,'survey1')" style="margin-left:0px;">
+                    <a class="  marr" style="color:#0a73b4;"> </a> </span> </div>
+              </li>
+              <li>Wei-Xi Li, Alberto Parmeggiani and Yan-Lin Wang.
+                <div href="https://arxiv.org/abs/1708.03095" class="paper-title"> Global
+                  Gevrey hypoellipticity for the twisted Laplacian on forms. </div>
+                <a class="journal" href="http://www.springer.com/birkhauser/mathematics/journal/11868">
+                  Journal of Pseudo-Differential Operators and Applications </a>
+                9(2018), 151–171
+                <div id="box23" class="mdi" style="display:none">
+                  <pre>@article {MR3804032,
+    AUTHOR = {Li, Wei-Xi and Parmeggiani, Alberto and Wang, Yan-Lin},
+     TITLE = {Global {G}evrey hypoellipticity for the twisted {L}aplacian on
+              forms},
+   JOURNAL = {J. Pseudo-Differ. Oper. Appl.},
+  FJOURNAL = {Journal of Pseudo-Differential Operators and Applications},
+    VOLUME = {9},
+      YEAR = {2018},
+    NUMBER = {2},
+     PAGES = {151--171},
+      ISSN = {1662-9981},
+   MRCLASS = {35H10 (35B65)},
+  MRNUMBER = {3804032},
+MRREVIEWER = {Qi Han},
+       DOI = {10.1007/s11868-017-0232-x},
+       URL = {http://doi.org/10.1007/s11868-017-0232-x},
+}</pre>
+                </div>
+                <div> <a href="https://arxiv.org/abs/1708.03095" class="  marr">
+                    PDF </a> • <a href="http://doi.org/10.1007/s11868-017-0232-x"
+                    class="  marr">
+                    DOI </a>  
+                </div>
+              </li>
+              <li> Wei-Xi Li.
+                <div class="paper-title"> Compactness criteria for the resolvent of the
+                  Fokker-Planck operator. </div>
+                <a class="journal" href="http://annaliscienze.sns.it/"> Annali
+                  della Scuola Normale Superiore di Pisa, Classe di Scienze </a>
+                , Vol. 18, issue 1 (2018), 119-143
+                <div id="box16" class="mdi" style="display:none">
+                  <pre>@article {MR3783786,
+    AUTHOR = {Li, Wei-Xi},
+     TITLE = {Compactness criteria for the resolvent of the
+              {F}okker-{P}lanck operator},
+   JOURNAL = {Ann. Sc. Norm. Super. Pisa Cl. Sci. (5)},
+  FJOURNAL = {Annali della Scuola Normale Superiore di Pisa. Classe di
+              Scienze. Serie V},
+    VOLUME = {18},
+      YEAR = {2018},
+    NUMBER = {1},
+     PAGES = {119--143},
+      ISSN = {0391-173X},
+   MRCLASS = {35Q84 (35H10 35P05 47A10)},
+  MRNUMBER = {3783786},
+}</pre>
+                </div>
+                <div> <a class="  marr" href="http://arxiv.org/abs/1510.01567">
+                    PDF </a> • <a class="  marr" href="http://annaliscienze.sns.it/index.php?page=Article&amp;id=508">
+                    DOI </a>  
+                </div>
+              </li>
+              <li> Wei-Xi Li.
+                <div class="paper-title"> Compactness of the resolvent for the Witten
+                  Laplacian. </div>
+                <a class="journal" href="http://www.springer.com/birkhauser/physics/journal/23/PSE">
+                  Annales Henri Poincaré </a> 19 (2018), 1259-1282 <br>
+                <!--div id="box22" style="display:none" class="mdi"-->
+                <div id="box2022" class="mdi" style="display:none">
+                  <pre>@article {MR3775156,
+    AUTHOR = {Li, Wei-Xi},
+     TITLE = {Compactness of the resolvent for the {W}itten {L}aplacian},
+   JOURNAL = {Ann. Henri Poincar\'{e}},
+  FJOURNAL = {Annales Henri Poincar\'{e}. A Journal of Theoretical and
+              Mathematical Physics},
+    VOLUME = {19},
+      YEAR = {2018},
+    NUMBER = {4},
+     PAGES = {1259--1282},
+      ISSN = {1424-0637},
+   MRCLASS = {35J10 (58J50 81Q05 81Q12)},
+  MRNUMBER = {3775156},
+MRREVIEWER = {Leonid Friedlander},
+       DOI = {10.1007/s00023-018-0659-5},
+       URL = {http://doi.org/10.1007/s00023-018-0659-5},
+}</pre>
+                </div>
+                <div> <a class="  marr" href="https://arxiv.org/abs/1707.04745">
+                    PDF </a>• <a class="  marr" href="http://doi.org/10.1007/s00023-018-0659-5">
+                    DOI </a>  
+                </div>
+              </li>
+              <li> Feng Cheng , Wei-Xi Li and Chao-Jiang Xu.
+                <div class="paper-title"> Vanishing viscosity of Navier-Stokes flow to
+                  ideal flow in Gevrey space. </div>
+                <a class="journal" href="http://onlinelibrary.wiley.com/journal/10.1002/%28ISSN%291099-1476">
+                  Mathematical Methods in the Applied Sciences </a> 40(2017),
+                5161–5176
+                <div id="boxclx17" class="mdi" style="display:none">
+                  <pre>@article {MR3689256,
+    AUTHOR = {Cheng, Feng and Li, Wei-Xi and Xu, Chao-Jiang},
+     TITLE = {Vanishing viscosity limit of {N}avier-{S}tokes equations in
+              {G}evrey class},
+   JOURNAL = {Math. Methods Appl. Sci.},
+  FJOURNAL = {Mathematical Methods in the Applied Sciences},
+    VOLUME = {40},
+      YEAR = {2017},
+    NUMBER = {14},
+     PAGES = {5161--5176},
+      ISSN = {0170-4214},
+   MRCLASS = {35Q30 (35B25)},
+  MRNUMBER = {3689256},
+       DOI = {10.1002/mma.4378},
+       URL = {http://doi.org/10.1002/mma.4378},
+}</pre>
+                </div>
+                <div> <a href="http://persoweb.whu.edu.cn/papers/M2A.pdf" class="  marr">
+                    PDF </a>• <a href="http://doi.org/10.1002/mma.4378" class="  marr">
+                    DOI </a>  
+                </div>
+              </li>
+              <li>Feng Cheng , Wei-Xi Li and Chao-Jiang Xu.
+                <div class="paper-title">Gevery regularity with weight for incompressible
+                  Euler equation in the half plane. </div>
+                <a class="journal" href="http://www.elsevier.com/wps/find/journaldescription.cws_home/708310/description#description">
+                  Acta Mathematics Scientia </a> 37 (2017), no. 4, 1115-1132
+                <div id="clxacm" class="mdi" style="display:none">
+                  <pre>@article {MR3657211,
+    AUTHOR = {Cheng, Feng and Li, Wei-Xi and Xu, Chao-Jiang},
+     TITLE = {Gevrey regularity with weight for incompressible {E}uler
+              equation in the half plane},
+   JOURNAL = {Acta Math. Sci. Ser. B (Engl. Ed.)},
+  FJOURNAL = {Acta Mathematica Scientia. Series B. English Edition},
+    VOLUME = {37},
+      YEAR = {2017},
+    NUMBER = {4},
+     PAGES = {1115--1132},
+      ISSN = {0252-9602},
+   MRCLASS = {35M33 (35Q31 76B03)},
+  MRNUMBER = {3657211},
+       DOI = {10.1016/S0252-9602(17)30061-9},
+       URL = {http://doi.org/10.1016/S0252-9602(17)30061-9},
+}</pre>
+                </div>
+                <div> <a href="https://arxiv.org/abs/1511.00539" class="  marr">
+                    PDF </a>• <a href="http://doi.org/10.1016/S0252-9602%2817%2930061-9"
+                    class="  marr">
+                    DOI </a>  
+                </div>
+              </li>
+              <li> Wei-Xi Li, Di Wu and Chao-Jiang Xu.
+                <div class="paper-title">Gevrey Class Smoothing Effect for the Prandtl
+                  Equation. </div>
+                <a class="journal" href="https://siam.org/journals/sima.php">
+                  SIAM Journal on Mathematical Analysis </a> 48
+                (2016),1672–1726
+                <div id="lwx16" class="mdi" style="display:none">
+                  <pre>@article {MR3493958,
+    AUTHOR = {Li, Wei-Xi and Wu, Di and Xu, Chao-Jiang},
+     TITLE = {Gevrey class smoothing effect for the {P}randtl equation},
+   JOURNAL = {SIAM J. Math. Anal.},
+  FJOURNAL = {SIAM Journal on Mathematical Analysis},
+    VOLUME = {48},
+      YEAR = {2016},
+    NUMBER = {3},
+     PAGES = {1672--1726},
+      ISSN = {0036-1410},
+   MRCLASS = {35Q35 (35A20 35B65 76D03 76D09 76D10)},
+  MRNUMBER = {3493958},
+       DOI = {10.1137/15M1020368},
+       URL = {http://doi.org/10.1137/15M1020368},
+}</pre>
+                </div>
+                <div> <a href="http://persoweb.whu.edu.cn/papers/SIAM.pdf" class="  marr">
+                    PDF </a> • <a href="http://doi.org/10.1137/15M1020368" class="  marr">
+                    DOI </a>  
+                </div>
+              </li>
+              <li> Wei-Xi Li, Peng Luo and Shuying Tian.
+                <div class="paper-title">$L^2$-regularity of kinetic equations with
+                  external potential. </div>
+                <a class="journal" href="http://www.journals.elsevier.com/journal-of-differential-equations/#description">
+                  Journal of Differential Equations </a> 260 (2016), 5894-5911
+                <div id="llt16" class="mdi" style="display:none">
+                  <pre>@article {MR3456819,
+    AUTHOR = {Li, Wei-Xi and Luo, Peng and Tian, Shuying},
+     TITLE = {{$L^2$}-regularity of kinetic equations with external
+              potential},
+   JOURNAL = {J. Differential Equations},
+  FJOURNAL = {Journal of Differential Equations},
+    VOLUME = {260},
+      YEAR = {2016},
+    NUMBER = {7},
+     PAGES = {5894--5911},
+      ISSN = {0022-0396},
+   MRCLASS = {35H10 (35B65 35Q20 35Q84)},
+  MRNUMBER = {3456819},
+       DOI = {10.1016/j.jde.2015.12.022},
+       URL = {http://doi.org/10.1016/j.jde.2015.12.022},
+}
+</pre> </div>
+                <div> <a href="http://persoweb.whu.edu.cn/papers/JDE.pdf" class="  marr">
+                    PDF </a> • <a href="http://doi.org/10.1016/j.jde.2015.12.022"
+                    class="  marr">
+                    DOI </a>  
+                </div>
+              </li>
+              <li> Wei-Xi Li.
+                <div class="paper-title">Global hypoelliptic estimates for fractional
+                  order kinetic equation.</div>
+                <a class="journal" href="http://onlinelibrary.wiley.com/journal/10.1002/%28ISSN%291522-2616">
+                  Mathematische Nachrichten </a> 287(2014), 610-637
+                <div id="l14" class="mdi" style="display:none">
+                  <pre>@article {MR3193940,
+    AUTHOR = {Li, Wei-Xi},
+     TITLE = {Global hypoelliptic estimates for fractional order kinetic
+              equation},
+   JOURNAL = {Math. Nachr.},
+  FJOURNAL = {Mathematische Nachrichten},
+    VOLUME = {287},
+      YEAR = {2014},
+    NUMBER = {5-6},
+     PAGES = {610--637},
+      ISSN = {0025-584X},
+   MRCLASS = {35H10 (35Q20 35R11 82C40)},
+  MRNUMBER = {3193940},
+       DOI = {10.1002/mana.201200002},
+       URL = {https://doi.org/10.1002/mana.201200002},
+}</pre>
+                </div>
+                <div> <a href="http://persoweb.whu.edu.cn/MANA.pdf" class="  marr">
+                    PDF </a> • <a href="https://doi.org/10.1002/mana.201200002"
+                    class="  marr">
+                    DOI </a>  
+                </div>
+              </li>
+              <li> Hua Chen, Wei-Xi Li and Ling-Jun Wang.
+                <div class="paper-title"> Regularity of traveling free surface water waves
+                  with vorticity. </div>
+                <a class="journal" href="http://www.springer.com/mathematics/analysis/journal/332">
+                  Journal of Nonlinear Science </a> 23(2013), 1111-1142
+                <div id="clw13" class="mdi" style="display:none">
+                  <pre>@article {MR3132078,
+    AUTHOR = {Chen, Hua and Li, Wei-Xi and Wang, Ling-Jun},
+     TITLE = {Regularity of traveling free surface water waves with
+              vorticity},
+   JOURNAL = {J. Nonlinear Sci.},
+  FJOURNAL = {Journal of Nonlinear Science},
+    VOLUME = {23},
+      YEAR = {2013},
+    NUMBER = {6},
+     PAGES = {1111--1142},
+      ISSN = {0938-8974},
+   MRCLASS = {35Q35 (35A20 35B65 35C07 76B15)},
+  MRNUMBER = {3132078},
+MRREVIEWER = {Robert A. Van Gorder},
+       DOI = {10.1007/s00332-013-9181-6},
+       URL = {http://doi.org/10.1007/s00332-013-9181-6},
+}</pre>
+                </div>
+                <div> <a href="http://persoweb.whu.edu.cn/JNS.pdf" class="  marr">
+                    PDF </a> • <a href="http://doi.org/10.1007/s00332-013-9181-6"
+                    class="  marr">
+                    DOI </a>  
+                </div>
+              </li>
+              <li>Frédéric Hérau and Wei-Xi Li.
+                <div class="paper-title"> Global hypoelliptic estimates for Landau-type
+                  operator with external potential.</div>
+                <a class="journal" href="http://www.math.kyoto-u.ac.jp/journal/">
+                  Kyoto Journal of Mathematics </a> 53 (2013), 533-565
+                <div id="hl13" class="mdi" style="display:none">
+                  <pre>@article {MR3102561,
+    AUTHOR = {H\'{e}rau, Fr\'{e}d\'{e}ric and Li, Wei-Xi},
+     TITLE = {Global hypoelliptic estimates for {L}andau-type operators with
+              external potential},
+   JOURNAL = {Kyoto J. Math.},
+  FJOURNAL = {Kyoto Journal of Mathematics},
+    VOLUME = {53},
+      YEAR = {2013},
+    NUMBER = {3},
+     PAGES = {533--565},
+      ISSN = {2156-2261},
+   MRCLASS = {35H10 (35B65 35H20 35Q84 82C40)},
+  MRNUMBER = {3102561},
+MRREVIEWER = {Sergio Polidoro},
+       DOI = {10.1215/21562261-2265886},
+       URL = {http://doi.org/10.1215/21562261-2265886},
+}</pre>
+                </div>
+                <div> <a href="http://hal.archives-ouvertes.fr/docs/00/63/78/34/PDF/Landau-111102-HeLi.pdf"
+                    class="  marr">
+                    PDF </a> • <a href="http://doi.org/10.1215/21562261-2265886"
+                    class="  marr">
+                    DOI </a>  
+                </div>
+              </li>
+              <li> Wei-Xi Li and Alberto Parmeggiani.
+                <div class="paper-title">Gevrey-hypoellipticity for twisted Laplacians.</div>
+                <a class="journal" href="http://www.springer.com/birkhauser/mathematics/journal/11868">
+                  Journal of Pseudo-Differential Operators and Applications </a>
+                4(2013) , 279-296
+                <div id="lp13" class="mdi" style="display:none">
+                  <pre>@article {MR3089830,
+    AUTHOR = {Li, Wei-Xi and Parmeggiani, Alberto},
+     TITLE = {Global {G}evrey hypoellipticity for twisted {L}aplacians},
+   JOURNAL = {J. Pseudo-Differ. Oper. Appl.},
+  FJOURNAL = {Journal of Pseudo-Differential Operators and Applications},
+    VOLUME = {4},
+      YEAR = {2013},
+    NUMBER = {3},
+     PAGES = {279--296},
+      ISSN = {1662-9981},
+   MRCLASS = {35H10 (35B65 35H20)},
+  MRNUMBER = {3089830},
+MRREVIEWER = {Mohammed El A\"{\i}di},
+       DOI = {10.1007/s11868-013-0073-1},
+       URL = {http://doi.org/10.1007/s11868-013-0073-1},
+}</pre>
+                </div>
+                <div> <a href="http://persoweb.whu.edu.cn/JPSEUDO.pdf" class="  marr">
+                    PDF </a> • <a href="http://doi.org/10.1007/s11868-013-0073-1"
+                    class="  marr">
+                    DOI </a>  
+                </div>
+              </li>
+              <li>Wei-Xi Li.
+                <div class="paper-title">Global hypoellipticity and compactness of
+                  resolvent for Fokker-Planck operator. </div>
+                <a class="journal" href="http://annaliscienze.sns.it/"> Annali
+                  della Scuola Normale Superiore di Pisa, Classe di Scienze </a>
+                11(2012), 789-815.
+                <div id="l12" class="mdi" style="display:none">
+                  <pre>@article {MR3060700,
+    AUTHOR = {Li, Wei-Xi},
+     TITLE = {Global hypoellipticity and compactness of resolvent for
+              {F}okker-{P}lanck operator},
+   JOURNAL = {Ann. Sc. Norm. Super. Pisa Cl. Sci. (5)},
+  FJOURNAL = {Annali della Scuola Normale Superiore di Pisa. Classe di
+              Scienze. Serie V},
+    VOLUME = {11},
+      YEAR = {2012},
+    NUMBER = {4},
+     PAGES = {789--815},
+      ISSN = {0391-173X},
+   MRCLASS = {35H10 (47A10)},
+  MRNUMBER = {3060700},
+}</pre>
+                </div>
+                <div> <a href="http://arxiv.org/abs/0910.1049" class="  marr">
+                    arXiv </a> • <a href="http://annaliscienze.sns.it/index.php?page=Article&amp;id=257"
+                    class="  marr">
+                    DOI </a> 
+                </div>
+              </li>
+              <li> Renjun Duan and Wei-Xi Li.
+                <div class="paper-title">Hypocoercivity for the linear Boltzmann equation
+                  with confining forces. </div>
+                <a class="journal" href="http://www.springer.com/physics/complexity/journal/10955">
+                  Journal of Statistical Physics </a> 148(2012), 306-324
+                <div id="dl12" class="mdi" style="display:none">
+                  <pre>@article {MR2966364,
+    AUTHOR = {Duan, Renjun and Li, Wei-Xi},
+     TITLE = {Hypocoercivity for the linear {B}oltzmann equation with
+              confining forces},
+   JOURNAL = {J. Stat. Phys.},
+  FJOURNAL = {Journal of Statistical Physics},
+    VOLUME = {148},
+      YEAR = {2012},
+    NUMBER = {2},
+     PAGES = {306--324},
+      ISSN = {0022-4715},
+   MRCLASS = {35Q20 (82C40)},
+  MRNUMBER = {2966364},
+MRREVIEWER = {Stephen Wollman},
+       DOI = {10.1007/s10955-012-0545-3},
+       URL = {https://doi.org/10.1007/s10955-012-0545-3},
+}</pre>
+                </div>
+                <div> <a href="http://arxiv.org/abs/1112.1457" class="  marr">
+                    arXiv </a> • <a href="https://doi.org/10.1007/s10955-012-0545-3"
+                    class="  marr">
+                    DOI </a>  
+                </div>
+              </li>
+              <li> Hua Chen, Wei-Xi Li and Chao-Jiang Xu.
+                <div class="paper-title"> Gevrey regularity of subelliptic Monge-Ampère
+                  equations in the plane.</div>
+                <a class="journal" href="http://www.journals.elsevier.com/advances-in-mathematics/">
+                  Advances in Mathematics </a> 228(2011) 1816-1841.
+                <div id="clxadv" class="mdi" style="display:none">
+                  <pre>@article {MR2824570,
+    AUTHOR = {Chen, Hua and Li, Weixi and Xu, Chaojiang},
+     TITLE = {Gevrey regularity of subelliptic {M}onge-{A}mp\`ere equations in
+              the plane},
+   JOURNAL = {Adv. Math.},
+  FJOURNAL = {Advances in Mathematics},
+    VOLUME = {228},
+      YEAR = {2011},
+    NUMBER = {3},
+     PAGES = {1816--1841},
+      ISSN = {0001-8708},
+   MRCLASS = {35J96 (35A20 35B65 35H20)},
+  MRNUMBER = {2824570},
+MRREVIEWER = {Jiakun Liu},
+       DOI = {10.1016/j.aim.2011.06.037},
+       URL = {https://doi.org/10.1016/j.aim.2011.06.037},
+}</pre>
+                </div>
+                <div> <a href="http://arxiv.org/abs/0910.1718" class="  marr">
+                    arXiv </a> • <a href="https://doi.org/10.1016/j.aim.2011.06.037"
+                    class="  marr">
+                    DOI </a>                  </div>
+              </li>
+              <li>Hua Chen, Wei-Xi Li and Chao-Jiang Xu.
+                <div class="paper-title"> Gevrey hypoellipticity for a class of kinetic
+                  equations.</div>
+                <a class="journal" href="http://www.tandf.co.uk/journals/authors/lpdeauth.asp">
+                  Communications in Partial Differential Equations </a> 36
+                (2011) 693-728.
+                <div id="clxcpde" class="mdi" style="display:none">
+                  <pre>@article {MR2763329,
+    AUTHOR = {Chen, Hua and Li, Wei-Xi and Xu, Chao-Jiang},
+     TITLE = {Gevrey hypoellipticity for a class of kinetic equations},
+   JOURNAL = {Comm. Partial Differential Equations},
+  FJOURNAL = {Communications in Partial Differential Equations},
+    VOLUME = {36},
+      YEAR = {2011},
+    NUMBER = {4},
+     PAGES = {693--728},
+      ISSN = {0360-5302},
+   MRCLASS = {35H10 (35A20 35B65)},
+  MRNUMBER = {2763329},
+MRREVIEWER = {Gregorio Chinni},
+       DOI = {10.1080/03605302.2010.507689},
+       URL = {https://doi.org/10.1080/03605302.2010.507689},
+}</pre>
+                </div>
+                <div> <a href="http://arxiv.org/abs/0910.3057" class="  marr">
+                    arXiv </a> • <a href="https://doi.org/10.1080/03605302.2010.507689"
+                    class="  marr">
+                    DOI </a>  
+                </div>
+              </li>
+              <li>Hua Chen, Wei-Xi Li and Chao-Jiang Xu.
+                <div class="paper-title">Analytic smoothness effect of solutions for
+                  spatially homogeneous Landau equation. </div>
+                <a class="journal" href="http://www.journals.elsevier.com/journal-of-differential-equations/#description">
+                  Journal of Differential Equations </a> 248 (2010) 77-94.
+                <div id="clxjde10" class="mdi" style="display:none">
+                  <pre>@article {MR2557895,
+    AUTHOR = {Chen, Hua and Li, Wei-Xi and Xu, Chao-Jiang},
+     TITLE = {Analytic smoothness effect of solutions for spatially
+              homogeneous {L}andau equation},
+   JOURNAL = {J. Differential Equations},
+  FJOURNAL = {Journal of Differential Equations},
+    VOLUME = {248},
+      YEAR = {2010},
+    NUMBER = {1},
+     PAGES = {77--94},
+      ISSN = {0022-0396},
+   MRCLASS = {35B65 (35Q20 35R09 76P05 82C40)},
+  MRNUMBER = {2557895},
+MRREVIEWER = {Simon Labrunie},
+       DOI = {10.1016/j.jde.2009.08.006},
+       URL = {https://doi.org/10.1016/j.jde.2009.08.006},
+}</pre>
+                </div>
+                <div> <a href="http://arxiv.org/abs/0910.1291" class="  marr">
+                    arXiv </a> • <a href="https://doi.org/10.1016/j.jde.2009.08.006"
+                    class="  marr">
+                    DOI </a>  
+                </div>
+              </li>
+              <li> Hua Chen, Wei-Xi Li and Chao-Jiang Xu.
+                <div class="paper-title">Gevrey regularity for solution of the spatially
+                  homogeneous Landau equation. </div>
+                <a class="journal" href="http://www.elsevier.com/wps/find/journaldescription.cws_home/708310/description#description">
+                  Acta Mathematics Scientia </a> 29(2009), 673-686.
+                <div id="clxwulixue" class="mdi" style="display:none">
+                  <pre>@article {MR2514370,
+    AUTHOR = {Chen, Hua and Li, Weixi and Xu, Chaojiang},
+     TITLE = {Gevrey regularity for solution of the spatially homogeneous
+              {L}andau equation},
+   JOURNAL = {Acta Math. Sci. Ser. B (Engl. Ed.)},
+  FJOURNAL = {Acta Mathematica Scientia. Series B. English Edition},
+    VOLUME = {29},
+      YEAR = {2009},
+    NUMBER = {3},
+     PAGES = {673--686},
+      ISSN = {0252-9602},
+   MRCLASS = {35R09 (35A20 35B65 35K55 82C40)},
+  MRNUMBER = {2514370},
+MRREVIEWER = {Tilak Bhattacharya},
+       DOI = {10.1016/S0252-9602(09)60063-1},
+       URL = {https://doi.org/10.1016/S0252-9602(09)60063-1},
+}</pre>
+                </div>
+                <div> <a href="http://arxiv.org/abs/0911.4280" class="  marr">
+                    arXiv </a> • <a href="https://doi.org/10.1016/S0252-9602%2809%2960063-1"
+                    class="  marr">
+                    DOI </a>  
+                </div>
+              </li>
+              <li> Hua Chen, Wei-Xi Li and Chao-Jiang Xu.
+                <div class="paper-title"> Gevrey hypoellipticity for linear and non-linear
+                  Fokker-Planck equations. </div>
+                <a class="journal" href="http://www.journals.elsevier.com/journal-of-differential-equations/#description">
+                  Journal of Differential Equations </a> 246 (2009), 320- 339.
+                <div id="chenlixuejde09" class="mdi" style="display:none">
+                  <pre>@article {MR2467026,
+    AUTHOR = {Chen, Hua and Li, Wei-Xi and Xu, Chao-Jiang},
+     TITLE = {Gevrey hypoellipticity for linear and non-linear
+              {F}okker-{P}lanck equations},
+   JOURNAL = {J. Differential Equations},
+  FJOURNAL = {Journal of Differential Equations},
+    VOLUME = {246},
+      YEAR = {2009},
+    NUMBER = {1},
+     PAGES = {320--339},
+      ISSN = {0022-0396},
+   MRCLASS = {35H10 (35A20 35K55 35Q84 82C35)},
+  MRNUMBER = {2467026},
+MRREVIEWER = {Fran\c{c}ois Vigneron},
+       DOI = {10.1016/j.jde.2008.05.019},
+       URL = {https://doi.org/10.1016/j.jde.2008.05.019},
+}</pre>
+                </div>
+                <div> <a href="http://arxiv.org/abs/0903.4026" class="  marr">
+                    arXiv </a> • <a href="https://doi.org/10.1016/j.jde.2008.05.019"
+                    class="  marr">
+                    DOI </a>                  </div>
+              </li>
+              <li> Hua Chen, Wei-Xi Li and Chao-Jiang Xu.
+                <div class="paper-title"> Propagation of Gevrey regularity for solutions
+                  of Landau equations.</div>
+                <a class="journal" href="https://www.aimsciences.org/journal/1937-5093">
+                  Kinetic and Related Models </a> 1(2008), 355- 368.
+                <div id="clxkrm08" class="mdi" style="display:none">
+                  <pre>@article {MR2425602,
+    AUTHOR = {Chen, Hua and Li, Wei-Xi and Xu, Chao-Jiang},
+     TITLE = {Propagation of {G}evrey regularity for solutions of {L}andau
+              equations},
+   JOURNAL = {Kinet. Relat. Models},
+  FJOURNAL = {Kinetic and Related Models},
+    VOLUME = {1},
+      YEAR = {2008},
+    NUMBER = {3},
+     PAGES = {355--368},
+      ISSN = {1937-5093},
+   MRCLASS = {35K55 (35A21 35B65 76P05)},
+  MRNUMBER = {2425602},
+MRREVIEWER = {Svetlin Georgiev Georgiev},
+       DOI = {10.3934/krm.2008.1.369},
+       URL = {https://doi.org/10.3934/krm.2008.1.369},
+}</pre>
+                </div>
+                <div> <a href="http://arxiv.org/abs/0911.4281" class="  marr">
+                    arXiv </a>• <a href="https://doi.org/10.3934/krm.2008.1.369"
+                    class="  marr">
+                    DOI </a>  
+                </div>
+              </li>
+              <li> Shaohua Wu, Hua Chen and Wei-Xi Li.
+                <div class="paper-title">The local and global existence of the solutions
+                  of hyperbolic-parabolic system modeling biological phenomena.
+                </div>
+                <a class="journal" href="http://www.elsevier.com/wps/find/journaldescription.cws_home/708310/description#description">
+                  Acta Mathematics Scientia </a> 28 (2008), 101- 116.
+                <div id="cwl08" class="mdi" style="display:none">
+                  <pre>@article {MR2389586,
+    AUTHOR = {Wu, Shaohua and Chen, Hua and Li, Weixi},
+     TITLE = {The local and global existence of the solutions of
+              hyperbolic-parabolic system modeling biological phenomena},
+   JOURNAL = {Acta Math. Sci. Ser. B (Engl. Ed.)},
+  FJOURNAL = {Acta Mathematica Scientia. Series B. English Edition},
+    VOLUME = {28},
+      YEAR = {2008},
+    NUMBER = {1},
+     PAGES = {101--116},
+      ISSN = {0252-9602},
+   MRCLASS = {35Q80 (35K45 35K55 35L70 47D06 92B05)},
+  MRNUMBER = {2389586},
+       DOI = {10.1016/S0252-9602(08)60011-9},
+       URL = {https://doi.org/10.1016/S0252-9602(08)60011-9},
+}</pre>
+                </div>
+                <div> <a href="https://doi.org/10.1016/S0252-9602%2808%2960011-9"
+                    class="  marr">
+                    DOI </a>    
+                </div>
+              </li>
+              <li> Wei-Xi Li and Tong Yang.
+                <div class="paper-title"> Well-posedness in Gevrey function space for the
+                  three-dimensional Prandtl equations. </div>
+                arXiv:1708.08217. Unpublished.
+                <div id="box24" class="mdi" style="display:none">
+                  <pre> @ARTICLE{2017arXiv170808217L,
+       author = {{Li}, Wei-Xi and {Yang}, Tong},
+        title = "{Well-posedness in Gevrey function space for the three-dimensional Prandtl equations}",
+      journal = {arXiv e-prints},
+     keywords = {Mathematics - Analysis of PDEs},
+         year = 2017,
+        month = aug,
+          eid = {arXiv:1708.08217},
+        pages = {arXiv:1708.08217},
+archivePrefix = {arXiv},
+       eprint = {1708.08217},
+ primaryClass = {math.AP},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2017arXiv170808217L},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}</pre>
+                </div>
+                <div> <a class="  marr" href="https://arxiv.org/abs/1708.08217">
+                    arxiv </a>    
+                </div>
+              </li>
+                </ol>     
+                  
+</div>
+
+<div class="papers-list">
+        <div class="section-title">Collaborators & Mentors</div>
+ <p style="text-align:justify;  font-size: 16px;">  Qi An  •  <a href="https://sites.google.com/site/radjesvaranealexandre">Radjesvarane
+                Alexandre</a> • Hongmei Cao • <a href="https://www.researchgate.net/profile/Hua_Chen4">Hua
+                Chen </a> • Jun-Ling Chen •  Ke Chen  •  <a href="http://mci.hubu.edu.cn/nry2.jsp?urltype=news.NewsContentUrl&amp;wbtreeid=1059&amp;wbnewsid=2473">Feng
+                Cheng </a> • <a href="http://www.maths.lth.se/matematiklu/personal/dencker/homepage.html">
+                Nils Dencker • </a><a href="http://www.math.cuhk.edu.hk/%7Erjduan/">
+                Renjun Duan </a> • <a href="https://math.tsinghua.edu.cn/info/1125/1816.htm">
+               Ling-Bing He</a> • <a href="http://www.math.sciences.univ-nantes.fr/%7Eherau/index.php">
+                Frédéric Hérau</a> • Xin Hu • Jie Ji • <a href="http://webusers.imj-prg.fr/%7Enicolas.lerner/">
+                Nicolas Lerner</a> • Hao-Guang Li • Lvqiao Liu • <a href="http://maths.ccnu.edu.cn/info/1041/16658.htm">Peng
+                Luo </a> • <a href="https://math.nyu.edu/faculty/masmoudi/">Nader
+                Masmoudi</a> • <a href="https://lmrs.univ-rouen.fr/fr/persopage/van-sang-ngo">Van-Sang
+                Ngo </a> • <a href="https://www.math.u-bordeaux.fr/imb/fiche-personnelle?uid=mpaicu&amp;lang=fr">
+                Marius Paicu </a> • <a href="http://www.dm.unibo.it/%7Eparmeggi">Alberto
+                Parmeggiani</a> • Shuying Tian • Hao Wang  • Ling-Jun Wang • <a href="http://www.math.sciences.univ-nantes.fr/%7Ewang/">Xue
+                Ping Wang </a> • Yan-Lin Wang • Di Wu • Shaohua Wu • <a href="https://www.researchgate.net/scientific-contributions/19495607_Chao-Jiang_Xu">
+                Chao-Jiang Xu </a> • Rui Xu • <a href="http://math0.bnu.edu.cn/~xjxu/">Xiaojing Xu </a>• Zhan Xu• Anita Yang •<a href="http://www6.cityu.edu.hk/ma/people/profile/yangt.htm">Tong
+                Yang </a> • Tianyuan Yu • Juan Zeng • Jinpeng Zhan • <a href="http://www.math.ac.cn/people/zp/">Ping
+                Zhang</a> </p>    
+<br><br>    
+        </div>
+</div>
+<footer>
+     
+</footer>
+</body>
+</html>
